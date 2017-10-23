@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-edit {
+    margin-top:50px
+}
+
+#standalone-container {
+    margin: 50px auto;
+    max-width: 720px;
+}
+#editor-container {
+    min-height: 350px;
+}
+
+.page {
+    margin-top:50px;
+}
+
+.page .title {
+    font-weight: 700;
+    font-size:32px;
+    outline: none
+}
+
+.page .meta {
+    font-size:15px;
+    color: #79828B
+}
+
+
+.btn,.btn:hover {
+    cursor:pointer
+}
+
+.btn-edit {
+    float:left;
+    clear:both
+}
+
+.hide {
+    display:none
+}
+
+.page .ql-toolbar {
+    display:none
+}
+
+.page div.ql-editor {
+    padding: 0;
+    font-size:18px;
+}
+
+.page-editing .ql-toolbar {
+    display:block
+}
+
+div.ql-container.ql-snow {
+    border: 1px solid white
+}
+
+.page-editing div.ql-editor {
+    padding: 12px 15px;
+    font-size:18px;
+}
+
+div.ql-editor .ql-video {
+    width: 100%;
+    height: 500px;
+}
+
+.errors {
+    margin-top:50px;
+}
+
+.tx a {
+    color: #868e96;
+    font-weight: bold;
+    margin-bottom:20px
+}
+
+.footer {
+    margin-top:50px;
+    border-top: 1px solid #e9ecef;
+    padding:20px 10px;
+    color: #868e96
+}
+
+.meta * + *:before {
+    content: "● ";
+}
+
+.footer .links span + span:before {
+    content: "/ ";
+}

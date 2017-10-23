@@ -14,13 +14,13 @@ Flight::set('flight.log_errors', false);
 Flight::set('flight.handle_errors', false);
 
 Flight::route('/about', function() {
-    $url = '/eb0c65722a14-Some words about telescr.in';
-    Header("Location: " . urlencode($url));
+    $url = 'eb0c65722a14-Some words about telescr.in';
+    Header("Location: /" . urlencode($url));
 });
 
 Flight::route('/orwell', function() {
-    $url = '/a1863c2f9dd9-Hello world, or some words about orwell';
-    Header("Location: " . urlencode($url));
+    $url = 'a1863c2f9dd9-Hello world, or some words about orwell';
+    Header("Location: /" . urlencode($url));
 });
 
 //+caching

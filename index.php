@@ -13,12 +13,14 @@ use JsonRPC\Client;
 Flight::set('flight.log_errors', false);
 Flight::set('flight.handle_errors', false);
 
-Flight::route('/about', function(){
-    Flight::redirect("/eb0c65722a14-Some%20words%20about%20telescr.in");
+Flight::route('/about', function() {
+    $url = 'eb0c65722a14-Some words about telescr.in';
+    Header("Location: /" . urlencode($url));
 });
 
-Flight::route('/orwell', function(){
-    Flight::redirect("/a1863c2f9dd9-Hello%20world%2C%20or%20some%20words%20about%20orwell");
+Flight::route('/orwell', function() {
+    $url = 'a1863c2f9dd9-Hello world, or some words about orwell';
+    Header("Location: /" . urlencode($url));
 });
 
 //+caching
@@ -108,10 +110,10 @@ Flight::route('/(@title)', function($title) {
 
     list($oid) = explode("-", $title);
     try {
-        if ($_GET['key']){
-            $_SESSION['page_'.$oid] = $_GET['key'];
+        if ($_GET['key']) {
+            $_SESSION['page_' . $oid] = $_GET['key'];
             Flight::redirect("/$title");
-         }
+        }
 
         $client = Flight::get('rpc');
         $res = $client->execute('dbgetbyid', array(

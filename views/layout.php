@@ -58,8 +58,8 @@
 
                 <div class="row">
                     <div class="links col text-left">
-                        <span> <a href="/about">About</a> </span>
-                        <span> <a href="/orwell">Orwell protocol</a> </span>
+                        <span> <a href="/eb0c65722a14-Some words about telescr.in">About</a> </span>
+                        <span> <a href="/a1863c2f9dd9-Hello world, or some words about orwell">Orwell protocol</a> </span>
                     </div>
                     <div class="col text-right">
                         All information is stored in <a target="_blank" href="http://orwellscan.org">Orwell blockchain</a>
